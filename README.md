@@ -20,9 +20,11 @@
 
 ```sh
 dsh plugin --profile desktop add dsh-save-chat
+# or straight from the repository, with no registry in between
+dsh plugin --profile desktop add https://github.com/xypang33-sketch/dsh-save-chat
 ```
 
-Or from the in-app **Settings → Plugin Market**. You can also paste the name, a GitHub URL, or a local path into **Settings → Plugins → Add plugin**.
+Or from the in-app **Settings → Plugin Market**. **Settings → Plugins → Add plugin** takes any of those forms — a package name, a repository URL, a `.tgz` URL, or a local path.
 
 Restart `dsh`, then reload the page. Note that DSH does not auto-update plugins yet — to upgrade, uninstall and install the new version.
 

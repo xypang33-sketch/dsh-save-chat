@@ -20,9 +20,11 @@
 
 ```sh
 dsh plugin --profile desktop add dsh-save-chat
+# 或者直连仓库安装，不经过 npm
+dsh plugin --profile desktop add https://github.com/xypang33-sketch/dsh-save-chat
 ```
 
-或在应用内的 **设置 → 插件市场** 里一键安装；也可以把包名、GitHub 地址或本地路径粘到 **设置 → 插件 → 添加插件** 里。
+或在应用内的 **设置 → 插件市场** 里一键安装。**设置 → 插件 → 添加插件** 这几种形式都接受：包名、仓库地址、`.tgz` 地址、本地路径。
 
 重启 `dsh`，然后刷新页面。注意 DSH 目前不支持插件自动更新——升级需要先卸载再安装新版本。
 
