@@ -2,11 +2,11 @@
 
 [![Awesome DSH Plugin](https://awesome-dsh-plugin.com/badge.svg)](https://awesome-dsh-plugin.com/)
 [![npm](https://img.shields.io/npm/v/dsh-save-chat)](https://www.npmjs.com/package/dsh-save-chat)
-[![license](https://img.shields.io/npm/l/dsh-save-chat)](LICENSE)
+[![license](https://img.shields.io/npm/l/dsh-save-chat)](https://github.com/xypang33-sketch/dsh-save-chat/blob/main/LICENSE)
 
 **Keep the good answers.** One heart saves a whole conversation turn — your question and the complete reply — as a real Markdown file inside your project. Later, your own panel browses them, and the model can **search** them on demand.
 
-[中文](README.zh.md) · [Full reference](https://github.com/xypang33-sketch/dsh-save-chat/blob/main/docs/reference.md)
+[中文](https://github.com/xypang33-sketch/dsh-save-chat/blob/main/README.zh.md) · [Full reference](https://github.com/xypang33-sketch/dsh-save-chat/blob/main/docs/reference.md)
 
 > Zero dependencies. No database. Just Markdown files you own.
 

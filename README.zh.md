@@ -2,11 +2,11 @@
 
 [![Awesome DSH Plugin](https://awesome-dsh-plugin.com/badge.svg)](https://awesome-dsh-plugin.com/)
 [![npm](https://img.shields.io/npm/v/dsh-save-chat)](https://www.npmjs.com/package/dsh-save-chat)
-[![license](https://img.shields.io/npm/l/dsh-save-chat)](LICENSE)
+[![license](https://img.shields.io/npm/l/dsh-save-chat)](https://github.com/xypang33-sketch/dsh-save-chat/blob/main/LICENSE)
 
 **把好的回答留下来。** 点一下心形，就把**整轮对话**（你的问题 + 完整回答）存成项目里的真实 Markdown 文件；之后面板可以浏览它们，模型也能**按需检索**它们。
 
-[English](README.md) · [完整参考](https://github.com/xypang33-sketch/dsh-save-chat/blob/main/docs/reference.zh.md)
+[English](https://github.com/xypang33-sketch/dsh-save-chat/blob/main/README.md) · [完整参考](https://github.com/xypang33-sketch/dsh-save-chat/blob/main/docs/reference.zh.md)
 
 > 零依赖、无数据库，就是你自己的 Markdown 文件。
 
