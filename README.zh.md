@@ -12,7 +12,11 @@
 
 ## 截图
 
+*每条回复下面都有动作行，红心就是收藏按钮——点一下，整轮问答（问题 + 完整回答）就被保存下来。*
+
 ![在动作行收藏一轮对话](https://raw.githubusercontent.com/xypang33-sketch/dsh-save-chat/main/docs/screenshot-heart.png)
+
+*收藏面板：左侧是工作区 / 会话 / 条目树，右侧并排渲染选中的那一节；工具条可在「只看该节 / 展开全文」之间切换、在文件夹中显示、关闭阅读区。*
 
 ![浏览收藏与知识库](https://raw.githubusercontent.com/xypang33-sketch/dsh-save-chat/main/docs/screenshot-panel.png)
 

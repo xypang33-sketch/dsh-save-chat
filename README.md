@@ -12,7 +12,11 @@
 
 ## Screenshots
 
+*Every reply carries the action row. The heart is the save button — one click keeps the whole turn (your question plus the complete answer).*
+
 ![Save a turn from the action row](https://raw.githubusercontent.com/xypang33-sketch/dsh-save-chat/main/docs/screenshot-heart.png)
+
+*The collection panel: workspaces, sessions, and saved turns on the left; the selected turn rendered beside it. The toolbar switches between this section and the whole file, reveals the file in your file manager, and closes the reader.*
 
 ![Browse collections and the knowledge base](https://raw.githubusercontent.com/xypang33-sketch/dsh-save-chat/main/docs/screenshot-panel.png)
 
