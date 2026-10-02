@@ -1,0 +1,118 @@
+{
+  "name": "dsh-save-chat",
+  "version": "0.1.0",
+  "description": "Save DSH conversation turns into Markdown: a heart in the assistant action row, per-session collections in the sidebar, and a personal knowledge base the model can search on demand.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./client": "./src/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "deepseek",
+    "dsh",
+    "dsh-plugin",
+    "dsh-bundle",
+    "cordis",
+    "cordis-plugin",
+    "save-chat",
+    "save-conversation",
+    "save",
+    "saved",
+    "favorite",
+    "favorites",
+    "favourite",
+    "favourites",
+    "favs",
+    "faves",
+    "bookmark",
+    "bookmarks",
+    "star",
+    "starred",
+    "pin",
+    "collect",
+    "collection",
+    "archive",
+    "conversation",
+    "chat",
+    "session",
+    "session-history",
+    "turn",
+    "message",
+    "history",
+    "transcript",
+    "knowledge-base",
+    "knowledge",
+    "notes",
+    "note",
+    "notebook",
+    "memory",
+    "second-brain",
+    "rag",
+    "retrieval",
+    "search",
+    "full-text-search",
+    "markdown",
+    "md",
+    "export",
+    "local-first",
+    "offline",
+    "files",
+    "git",
+    "收藏",
+    "收藏对话",
+    "对话收藏",
+    "保存对话",
+    "保存聊天",
+    "知识库",
+    "个人知识库",
+    "笔记",
+    "检索",
+    "记忆",
+    "导出",
+    "对话",
+    "插件"
+  ],
+  "license": "MIT",
+  "author": "Aurora_ (https://github.com/xypang33-sketch)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xypang33-sketch/dsh-save-chat.git"
+  },
+  "homepage": "https://github.com/xypang33-sketch/dsh-save-chat#readme",
+  "bugs": {
+    "url": "https://github.com/xypang33-sketch/dsh-save-chat/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "scripts": {
+    "test": "node tests/run-all.mjs"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.3.2",
+    "jsdom": "^29.1.1",
+    "micromark": "^4.0.2",
+    "micromark-extension-gfm": "^3.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

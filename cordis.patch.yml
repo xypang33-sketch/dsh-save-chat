@@ -1,0 +1,8 @@
+# dsh-save-chat bundle patch: inserts the plugin row into the
+# profile roster. The node half serves the /dsh-save-chat/* JSON
+# routes that read and write the per-session markdown collection; the browser
+# half (exports "./client") adds the heart action to the assistant action row,
+# the sidebar panel entry, and the collection browser.
+- insert:
+    - id: dsh-save-chat
+      name: 'dsh-save-chat'
