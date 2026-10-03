@@ -10,6 +10,9 @@ Documentation only; no runtime changes.
 
 ### Changed
 
+- The separate screenshot gallery is gone: all five annotated screenshots now illustrate a
+  single **60-second start** walkthrough (four steps, one image per step), so the README shows
+  the plugin in the order you actually meet it.
 - Three more annotated screenshots: adding a turn to the personal knowledge base,
   the knowledge-base view with its hint, and **copy reference** — each preceded by a
   sentence describing what the picture shows.

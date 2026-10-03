@@ -10,25 +10,25 @@
 
 > Zero dependencies. No database. Just Markdown files you own.
 
-## Screenshots
+## 60-second start
 
-*Every reply carries the action row. The heart is the save button — one click keeps the whole turn (your question plus the complete answer).*
+Once it is installed, one pass through the plugin looks like this:
+
+**1. One heart, one turn kept.** The heart on a reply's action row is the save button — the whole turn (your question plus the complete answer) is written to `<session workspace>/.dsh-favorites/<session title>.md`.
 
 ![Save a turn from the action row](https://raw.githubusercontent.com/xypang33-sketch/dsh-save-chat/main/docs/screenshot-heart.png)
 
-*The collection panel: workspaces, sessions, and saved turns on the left; the selected turn rendered beside it. The toolbar switches between this section and the whole file, reveals the file in your file manager, and closes the reader.*
+**2. Browse it in the sidebar.** A searchable tree grouped by workspace, session, and turn (the knowledge-base view is grouped by month) on the left, the selected section rendered beside it. The toolbar switches between this section and the whole file, reveals the file in your file manager, and closes the reader.
 
 ![Browse collections and the knowledge base](https://raw.githubusercontent.com/xypang33-sketch/dsh-save-chat/main/docs/screenshot-panel.png)
 
-*Right-click any row: pin, rename, copy a reference, add it to your personal knowledge base, or delete. The **知识库** switch at the top right opens the knowledge-base view.*
+**3. Promote what is worth keeping.** Right-click any row: pin, rename, copy a reference, add it to your personal knowledge base, or delete. The **知识库** switch at the top right opens the knowledge-base view, whose hint states how it behaves.
 
 ![Add a turn to the personal knowledge base](https://raw.githubusercontent.com/xypang33-sketch/dsh-save-chat/main/docs/screenshot-knowledge-menu.png)
 
-*The knowledge-base view, grouped by month. The hint says plainly what the model may do with it: search on demand — never injected automatically.*
-
 ![The knowledge-base view and its hint](https://raw.githubusercontent.com/xypang33-sketch/dsh-save-chat/main/docs/screenshot-knowledge.png)
 
-*Copy reference puts `@/path/file.md` on the clipboard; paste it into a later conversation and the model reads that saved record. Knowledge-base rows offer removal in the same menu.*
+**4. Use it in later conversations.** Copy reference puts `@/path/file.md` on the clipboard; paste it into a new conversation and the model reads that record. You can also just ask "what did we conclude last time?" — it calls `search_knowledge` and answers with the file and the date. Knowledge-base content is retrieved **only when the model needs it, never injected automatically**.
 
 ![Copy a reference to paste into a later conversation](https://raw.githubusercontent.com/xypang33-sketch/dsh-save-chat/main/docs/screenshot-copy-reference.png)
 
@@ -73,13 +73,6 @@ dsh plugin --profile web add https://github.com/xypang33-sketch/dsh-save-chat/re
 If you have the community **Plugin Market** (`dshmarket`) installed, this plugin will also be listed there and installable with one click. The market is a plugin itself, not part of DSH, so this path only exists once you install it.
 
 DSH does not auto-update plugins yet — to upgrade, uninstall and install the new version.
-## 60-second start
-
-1. **Click the heart** under any assistant reply. The turn is written to `<session workspace>/.dsh-favorites/<session title>.md`.
-2. **Open the 收藏 panel** in the sidebar: a searchable tree of every saved turn, grouped by workspace and session, with month grouping in the knowledge base view. Click a row to read it beside the list.
-3. **Right-click a row** to rename it, pin it, copy a `@file` reference, or **add it to your personal knowledge base**.
-4. **Ask the model about old work**: “what did we decide about the sandbox last time?” It calls `search_knowledge`, finds the saved turn, and cites the file and date.
-
 ## Why this one
 
 There are already bookmark plugins. This one differs in four ways:
