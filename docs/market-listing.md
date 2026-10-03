@@ -19,9 +19,11 @@ Read from the registry's own `contributing.md` (fetched 2026-10-02):
 - **The description is read as a claim and checked against the code**; overstating is the main reason good plugins are sent back. The entry in `docs/registry-entry.yml` only claims what the repository does.
 - Reviewers also check: does the code do what the entry says, is the category reasonable, is the plugin already covered by an existing entry (a tiebreaker — *“the rule is whichever is better”*), is anything alarming in the source, and does the PR touch entries it has no business touching.
 
-## Why `category: memory`
+## Why `category: session`
 
-Neighbours already listed: `penguin-oo/dsh-bookmarks` (`session`, per-message bookmarks with notes and tags), `htcqp802/dsh-knowledge-base` (`memory`, import + FTS5 over imported documents), `Relistencode/dsh-recall` (`memory`, three-layer retrieval over every past session). This plugin's distinguishing claim is the curated personal knowledge base the model retrieves from, so `memory` is the closest fit; the entry's description states the differences in one line.
+The primary flow happens inside a session — you save a turn from the reply's action row — and the closest neighbour, `penguin-oo/dsh-bookmarks`, is filed under `session` too. The overlap is deliberate and the entry states the differences: that plugin bookmarks single replies with notes and tags and exports Markdown on demand from its own store, whereas this one writes a real Markdown file per session, keeps per-session collections separate from a cross-project personal knowledge base, and lets the model query only what the user deliberately promoted.
+
+The other two neighbours sit under `memory`: `htcqp802/dsh-knowledge-base` imports external documents into SQLite FTS5, and `Relistencode/dsh-recall` retrieves over every past session. This plugin does neither — its content originates from your own conversations, it stores plain files, and its two model tools are read-only and scoped to the promoted knowledge base by default. `memory` was the first choice (the retrieval layer is the differentiator); `session` is the plainer description of what the plugin is, and the catalog's rule is to pick what the plugin does rather than where it would be nice to appear — maintainers re-file a near miss anyway.
 
 ## Screenshots are not a submission field
 
