@@ -23,6 +23,10 @@ Read from the registry's own `contributing.md` (fetched 2026-10-02):
 
 Neighbours already listed: `penguin-oo/dsh-bookmarks` (`session`, per-message bookmarks with notes and tags), `htcqp802/dsh-knowledge-base` (`memory`, import + FTS5 over imported documents), `Relistencode/dsh-recall` (`memory`, three-layer retrieval over every past session). This plugin's distinguishing claim is the curated personal knowledge base the model retrieves from, so `memory` is the closest fit; the entry's description states the differences in one line.
 
+## Screenshots are not a submission field
+
+Verified 2026-10-03: the per-plugin YAML accepts `url`, `name`, `category`, `description` and the optional `tarball` — **not** `screenshots`. The catalog keeps images in its own `data/screenshots.json`, populated by `scripts/probe-screenshots.mjs`, which resolves each entry's images against `https://raw.githubusercontent.com/<repo>/HEAD/…` and prefers **relative paths inside the plugin repository** (its comment notes that absolute `raw.githubusercontent` URLs "could only rot silently"). Entries in the PR should therefore declare no screenshots at all; the images that matter are the ones in this repository's README, which the market also falls back to when the install dialog opens. Five annotated shots are in the README: the action-row heart, the collection panel, adding a turn to the knowledge base, the knowledge-base view with its hint, and copy-reference.
+
 ## What the market reads per entry
 
 Field names used by the market client (`dshmarket` 1.44):
