@@ -20,6 +20,18 @@
 
 ![浏览收藏与知识库](https://raw.githubusercontent.com/xypang33-sketch/dsh-save-chat/main/docs/screenshot-panel.png)
 
+*右键任意条目：置顶 / 重命名 / 复制引用 / 加入个人知识库 / 删除；右上角的「**知识库**」切换到知识库视图。*
+
+![把这一轮加入个人知识库](https://raw.githubusercontent.com/xypang33-sketch/dsh-save-chat/main/docs/screenshot-knowledge-menu.png)
+
+*知识库视图，按月份分组。顶部提示写清了模型能做什么：按需检索，**不会自动注入对话**。*
+
+![知识库视图与它的提示](https://raw.githubusercontent.com/xypang33-sketch/dsh-save-chat/main/docs/screenshot-knowledge.png)
+
+*「复制引用」把 `@文件路径` 放进剪贴板，粘到之后的对话里模型就能读到这份记录；知识库条目的同一菜单里还有「从知识库移除」。*
+
+![复制引用，可粘到之后的对话里](https://raw.githubusercontent.com/xypang33-sketch/dsh-save-chat/main/docs/screenshot-copy-reference.png)
+
 ## 安装
 
 桌面 App 和 `dsh web` 两种形态都适用。插件会装进**当前正在运行的那个 profile**：桌面 App 是 `desktop`，`dsh web` 通常是 `web`。用界面不需要知道 profile 名，用命令则必须写对。

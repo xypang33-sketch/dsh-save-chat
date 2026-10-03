@@ -10,6 +10,9 @@ Documentation only; no runtime changes.
 
 ### Changed
 
+- Three more annotated screenshots: adding a turn to the personal knowledge base,
+  the knowledge-base view with its hint, and **copy reference** — each preceded by a
+  sentence describing what the picture shows.
 - The heart screenshot is annotated: the heart is circled and labelled
   **加入收藏 / Add to favorites**, so the README shows the entry point at a glance.
 - Both screenshots are preceded by a sentence describing what the picture shows.

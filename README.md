@@ -20,6 +20,18 @@
 
 ![Browse collections and the knowledge base](https://raw.githubusercontent.com/xypang33-sketch/dsh-save-chat/main/docs/screenshot-panel.png)
 
+*Right-click any row: pin, rename, copy a reference, add it to your personal knowledge base, or delete. The **知识库** switch at the top right opens the knowledge-base view.*
+
+![Add a turn to the personal knowledge base](https://raw.githubusercontent.com/xypang33-sketch/dsh-save-chat/main/docs/screenshot-knowledge-menu.png)
+
+*The knowledge-base view, grouped by month. The hint says plainly what the model may do with it: search on demand — never injected automatically.*
+
+![The knowledge-base view and its hint](https://raw.githubusercontent.com/xypang33-sketch/dsh-save-chat/main/docs/screenshot-knowledge.png)
+
+*Copy reference puts `@/path/file.md` on the clipboard; paste it into a later conversation and the model reads that saved record. Knowledge-base rows offer removal in the same menu.*
+
+![Copy a reference to paste into a later conversation](https://raw.githubusercontent.com/xypang33-sketch/dsh-save-chat/main/docs/screenshot-copy-reference.png)
+
 ## Install
 
 Either path works in both flavours — the desktop app and `dsh web`. The plugin installs into **the profile that is running**: `desktop` in the app, usually `web` for `dsh web`. The UI needs no profile name; the command needs the right one.
