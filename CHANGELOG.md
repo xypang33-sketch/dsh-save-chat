@@ -4,6 +4,21 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project uses
 [semantic versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.1] — 2026-10-03
+
+Documentation only; no runtime changes.
+
+### Changed
+
+- The heart screenshot is annotated: the heart is circled and labelled
+  **加入收藏 / Add to favorites**, so the README shows the entry point at a glance.
+- Both screenshots are preceded by a sentence describing what the picture shows.
+- The language switch and license links are absolute, so they also work on the npm
+  page (npm renders the Chinese README, which previously linked to a missing relative path).
+- The market listing material now records the verified `awesome-dsh-plugin`
+  submission rules (one file per plugin, the `dsh.bundle` manifest requirement, the
+  one-day repository age gate, and that npm is optional when a release tarball exists).
+
 ## [Unreleased]
 
 ## [0.1.0] — first public release
@@ -31,5 +46,6 @@ All notable changes to this project are documented here. The format follows
 - **Parse cache** keyed by file size and mtime, so the catalog re-reads only what changed.
 - No runtime dependencies: plain JavaScript, no build step, no database.
 
-[Unreleased]: https://github.com/xypang33-sketch/dsh-save-chat/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/xypang33-sketch/dsh-save-chat/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/xypang33-sketch/dsh-save-chat/releases/tag/v0.1.1
 [0.1.0]: https://github.com/xypang33-sketch/dsh-save-chat/releases/tag/v0.1.0
