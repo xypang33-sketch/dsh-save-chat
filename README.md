@@ -22,28 +22,45 @@
 
 ## Install
 
-**In the app — no CLI needed.** Open **Settings → Plugins → Add plugin** and paste one of these; it accepts all four spec forms:
+Either path works in both flavours — the desktop app and `dsh web`. The plugin installs into **the profile that is running**: `desktop` in the app, usually `web` for `dsh web`. The UI needs no profile name; the command needs the right one.
+
+### In the UI (works everywhere, including `dsh web`)
+
+Open **Settings → Plugins → Add plugin** and paste one of these four forms:
 
 | Paste | Comes from |
 |---|---|
-| `dsh-save-chat` | npm (mirror-friendly) — also the one-click path once the plugin is in **Settings → Plugin Market** |
+| `dsh-save-chat` | npm (the China mirror works too) |
 | `https://github.com/xypang33-sketch/dsh-save-chat` | the repository, cloned by git |
-| `https://github.com/xypang33-sketch/dsh-save-chat/releases/latest/download/dsh-save-chat.tgz` | the prebuilt release tarball — no git clone, no build |
+| `https://github.com/xypang33-sketch/dsh-save-chat/releases/latest/download/dsh-save-chat.tgz` | the prebuilt release tarball — no clone, no build |
 | an absolute path to a local checkout | development |
 
-**With the DSH CLI.** `dsh plugin` forwards its arguments to pnpm, so the spec forms are the same. The `--profile` flag picks which profile to install into; the command does not care which directory you run it from:
+Then restart DSH — for `dsh web`, restart the process — and reload the page.
+
+### From the terminal
+
+`dsh plugin` forwards its arguments to pnpm and **requires** `--profile <name>`: the profile you actually run (`desktop` for the app, `web` for `dsh web`, or your own). The directory you run it from does not matter.
 
 ```sh
+# dsh web
+dsh plugin --profile web add dsh-save-chat
+# desktop app
 dsh plugin --profile desktop add dsh-save-chat
-# same spec forms as above, e.g. straight from the repository:
-dsh plugin --profile desktop add https://github.com/xypang33-sketch/dsh-save-chat
-# replace `desktop` with your profile name (for example `web`)
 ```
 
-The CLI ships inside the desktop app's bundle; install it globally with `npm install -g @deepseek-ai/dsh` if you prefer it on `PATH`.
+The four spec forms are the same as in the table above; for example the prebuilt tarball, which needs no git clone and no build:
 
-Restart `dsh`, then reload the page. Note that DSH does not auto-update plugins yet — to upgrade, uninstall and install the new version.
+```sh
+dsh plugin --profile web add https://github.com/xypang33-sketch/dsh-save-chat/releases/latest/download/dsh-save-chat.tgz
+```
 
+`dsh` comes from `npm install -g @deepseek-ai/dsh` — note that the unscoped `dsh` package on npm is a different project. The desktop app bundles its own CLI inside the app bundle; if it is not on your `PATH`, use the UI above instead.
+
+### Plugin Market (optional)
+
+If you have the community **Plugin Market** (`dshmarket`) installed, this plugin will also be listed there and installable with one click. The market is a plugin itself, not part of DSH, so this path only exists once you install it.
+
+DSH does not auto-update plugins yet — to upgrade, uninstall and install the new version.
 ## 60-second start
 
 1. **Click the heart** under any assistant reply. The turn is written to `<session workspace>/.dsh-favorites/<session title>.md`.

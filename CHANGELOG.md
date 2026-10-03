@@ -28,7 +28,11 @@ Documentation only.
 - The install section no longer assumes the CLI is on `PATH` (the desktop app bundles it),
   and it documents all four spec forms the installer accepts: npm name, repository URL,
   prebuilt `.tgz` URL, and local path.
-- The install section no longer hard-codes the `desktop` profile without saying so.
+- The install section no longer hard-codes the `desktop` profile without saying so, and it
+  now spells out the `dsh web` path separately: use **Settings → Plugins → Add plugin**, or
+  `dsh plugin --profile web add …` from a terminal.
+- The Plugin Market is described as optional: `dshmarket` is a community plugin, not part of
+  DSH, so that one-click path exists only for people who installed it.
 
 ## [Unreleased]
 

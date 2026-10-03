@@ -22,28 +22,45 @@
 
 ## 安装
 
-**在应用里装（不需要命令行）**：打开 **设置 → 插件 → 添加插件**，下面四种形式都接受：
+桌面 App 和 `dsh web` 两种形态都适用。插件会装进**当前正在运行的那个 profile**：桌面 App 是 `desktop`，`dsh web` 通常是 `web`。用界面不需要知道 profile 名，用命令则必须写对。
+
+### 用界面（通用，`dsh web` 也一样）
+
+打开 **设置 → 插件 → 添加插件**，下面四种形式都可以填：
 
 | 粘贴内容 | 来源 |
 |---|---|
-| `dsh-save-chat` | npm（国内镜像同样可用）；收录进 **设置 → 插件市场** 后也可以一键安装 |
+| `dsh-save-chat` | npm（国内镜像同样可用） |
 | `https://github.com/xypang33-sketch/dsh-save-chat` | 仓库地址，用 git 克隆 |
 | `https://github.com/xypang33-sketch/dsh-save-chat/releases/latest/download/dsh-save-chat.tgz` | 预构建包，不克隆仓库、不构建 |
 | 本地目录的绝对路径 | 开发调试用 |
 
-**用 DSH 命令行装**：`dsh plugin` 会把参数直接交给 pnpm，所以能填的形式和上表一致；`--profile` 指定装到哪个 profile，**在哪个目录执行都可以**：
+然后重启 DSH（`dsh web` 就重启那个进程），再刷新页面。
+
+### 用命令行
+
+`dsh plugin` 会把参数交给 pnpm，并且**必须**带 `--profile <名字>`：写你实际运行的那个 profile（桌面 App 是 `desktop`，`dsh web` 是 `web`，自定义的就写自定义名）。**在哪个目录执行都可以**。
 
 ```sh
+# dsh web
+dsh plugin --profile web add dsh-save-chat
+# 桌面 App
 dsh plugin --profile desktop add dsh-save-chat
-# 同样的形式，例如直连仓库：
-dsh plugin --profile desktop add https://github.com/xypang33-sketch/dsh-save-chat
-# `desktop` 换成你自己的 profile 名（例如 `web`）
 ```
 
-这个 CLI 桌面 App 自带（在 App 包内）；想直接在终端用 `dsh`，可以 `npm install -g @deepseek-ai/dsh`。
+能填的形式与上表一致；例如用预构建包（不克隆、不构建）：
 
-重启 `dsh`，然后刷新页面。注意 DSH 目前不支持插件自动更新——升级需要先卸载再安装新版本。
+```sh
+dsh plugin --profile web add https://github.com/xypang33-sketch/dsh-save-chat/releases/latest/download/dsh-save-chat.tgz
+```
 
+`dsh` 来自 `npm install -g @deepseek-ai/dsh`——注意 npm 上无 scope 的 `dsh` 是**另一个项目**。桌面 App 自带一份 CLI（在 App 包内）；如果它不在你的 `PATH` 上，直接用上面的界面方式。
+
+### 插件市场（可选，不是人人都有）
+
+如果你装了社区插件 **`dshmarket`（插件市场）**，本插件被收录后也会出现在那里，可一键安装。市场本身是一个插件、不属于 DSH 自带功能，所以这条路只在你先装了它之后才存在。
+
+DSH 目前不支持插件自动更新——升级需要先卸载再安装新版本。
 ## 60 秒上手
 
 1. **点助手回复下方的心形**：这一轮会写进 `<会话工作目录>/.dsh-favorites/<会话标题>.md`；
