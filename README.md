@@ -38,13 +38,11 @@ Either path works in both flavours — the desktop app and `dsh web`. The plugin
 
 ### In the UI (works everywhere, including `dsh web`)
 
-Open **Settings → Plugins → Add plugin** and paste one of these four forms:
+Open **Settings → Plugins → Add plugin**. It accepts a package name, a repository URL, a prebuilt `.tgz`, or a local path; in day-to-day use it is usually one of these two:
 
 | Paste | Comes from |
 |---|---|
 | `dsh-save-chat` | npm (the China mirror works too) |
-| `https://github.com/xypang33-sketch/dsh-save-chat` | the repository, cloned by git |
-| `https://github.com/xypang33-sketch/dsh-save-chat/releases/latest/download/dsh-save-chat.tgz` | the prebuilt release tarball — no clone, no build |
 | an absolute path to a local checkout | development |
 
 Then restart DSH — for `dsh web`, restart the process — and reload the page.
@@ -60,7 +58,7 @@ dsh plugin --profile web add dsh-save-chat
 dsh plugin --profile desktop add dsh-save-chat
 ```
 
-The four spec forms are the same as in the table above; for example the prebuilt tarball, which needs no git clone and no build:
+The command takes the same kinds of specs (npm name, repository URL, prebuilt `.tgz`, local path) — for example the tarball, which needs no clone and no build:
 
 ```sh
 dsh plugin --profile web add https://github.com/xypang33-sketch/dsh-save-chat/releases/latest/download/dsh-save-chat.tgz

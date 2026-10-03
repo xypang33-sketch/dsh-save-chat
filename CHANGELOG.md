@@ -34,7 +34,8 @@ Documentation only.
 - The install section no longer sends readers off to install a CLI globally: it says to use the
   `dsh` they already start DSH with, and to fall back to the UI when there is none. It also
   documents all four spec forms the installer accepts: npm name, repository URL, prebuilt
-  `.tgz` URL, and local path.
+  `.tgz` URL, and local path. The paste table keeps only the two everyday forms — the package
+  name and a local checkout — while the command-line paragraph names all four.
 - The install section no longer hard-codes the `desktop` profile without saying so, and it
   now spells out the `dsh web` path separately: use **Settings → Plugins → Add plugin**, or
   `dsh plugin --profile web add …` from a terminal.

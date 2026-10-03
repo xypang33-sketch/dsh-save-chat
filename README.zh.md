@@ -38,13 +38,11 @@
 
 ### 用界面（通用，`dsh web` 也一样）
 
-打开 **设置 → 插件 → 添加插件**，下面四种形式都可以填：
+打开 **设置 → 插件 → 添加插件**。包名、仓库地址、预构建 `.tgz`、本地路径都能填，日常最常用的是这两种：
 
 | 粘贴内容 | 来源 |
 |---|---|
 | `dsh-save-chat` | npm（国内镜像同样可用） |
-| `https://github.com/xypang33-sketch/dsh-save-chat` | 仓库地址，用 git 克隆 |
-| `https://github.com/xypang33-sketch/dsh-save-chat/releases/latest/download/dsh-save-chat.tgz` | 预构建包，不克隆仓库、不构建 |
 | 本地目录的绝对路径 | 开发调试用 |
 
 然后重启 DSH（`dsh web` 就重启那个进程），再刷新页面。
@@ -60,7 +58,7 @@ dsh plugin --profile web add dsh-save-chat
 dsh plugin --profile desktop add dsh-save-chat
 ```
 
-能填的形式与上表一致；例如用预构建包（不克隆、不构建）：
+命令行接受同样的几类形式（包名、仓库地址、预构建 `.tgz`、本地路径），例如预构建包（不克隆、不构建）：
 
 ```sh
 dsh plugin --profile web add https://github.com/xypang33-sketch/dsh-save-chat/releases/latest/download/dsh-save-chat.tgz
