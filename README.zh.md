@@ -66,7 +66,7 @@ dsh plugin --profile desktop add dsh-save-chat
 dsh plugin --profile web add https://github.com/xypang33-sketch/dsh-save-chat/releases/latest/download/dsh-save-chat.tgz
 ```
 
-`dsh` 来自 `npm install -g @deepseek-ai/dsh`——注意 npm 上无 scope 的 `dsh` 是**另一个项目**。桌面 App 自带一份 CLI（在 App 包内）；如果它不在你的 `PATH` 上，直接用上面的界面方式。
+**这里的 `dsh` 就是你平时启动 DSH 的那个命令**（`dsh web`，或桌面 App 自带的那一份）。它在哪个目录执行都可以；如果你手上没有这个命令（例如只装了桌面 App），直接用上面的界面方式即可。
 
 ### 插件市场（可选，不是人人都有）
 

@@ -66,7 +66,7 @@ The four spec forms are the same as in the table above; for example the prebuilt
 dsh plugin --profile web add https://github.com/xypang33-sketch/dsh-save-chat/releases/latest/download/dsh-save-chat.tgz
 ```
 
-`dsh` comes from `npm install -g @deepseek-ai/dsh` — note that the unscoped `dsh` package on npm is a different project. The desktop app bundles its own CLI inside the app bundle; if it is not on your `PATH`, use the UI above instead.
+**`dsh` here is the command you already start DSH with** — `dsh web`, or the copy bundled inside the desktop app. It runs from any directory; if you do not have that command (a desktop-app-only install, for example), use the UI above instead.
 
 ### Plugin Market (optional)
 
