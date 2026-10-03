@@ -19,6 +19,17 @@ Documentation only; no runtime changes.
   submission rules (one file per plugin, the `dsh.bundle` manifest requirement, the
   one-day repository age gate, and that npm is optional when a release tarball exists).
 
+## [0.1.2] — 2026-10-03
+
+Documentation only.
+
+### Fixed
+
+- The install section no longer assumes the CLI is on `PATH` (the desktop app bundles it),
+  and it documents all four spec forms the installer accepts: npm name, repository URL,
+  prebuilt `.tgz` URL, and local path.
+- The install section no longer hard-codes the `desktop` profile without saying so.
+
 ## [Unreleased]
 
 ## [0.1.0] — first public release
@@ -46,6 +57,7 @@ Documentation only; no runtime changes.
 - **Parse cache** keyed by file size and mtime, so the catalog re-reads only what changed.
 - No runtime dependencies: plain JavaScript, no build step, no database.
 
-[Unreleased]: https://github.com/xypang33-sketch/dsh-save-chat/compare/v0.1.1...HEAD
+[Unreleased]: https://github.com/xypang33-sketch/dsh-save-chat/compare/v0.1.2...HEAD
+[0.1.2]: https://github.com/xypang33-sketch/dsh-save-chat/releases/tag/v0.1.2
 [0.1.1]: https://github.com/xypang33-sketch/dsh-save-chat/releases/tag/v0.1.1
 [0.1.0]: https://github.com/xypang33-sketch/dsh-save-chat/releases/tag/v0.1.0

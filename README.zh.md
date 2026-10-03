@@ -22,13 +22,25 @@
 
 ## 安装
 
+**在应用里装（不需要命令行）**：打开 **设置 → 插件 → 添加插件**，下面四种形式都接受：
+
+| 粘贴内容 | 来源 |
+|---|---|
+| `dsh-save-chat` | npm（国内镜像同样可用）；收录进 **设置 → 插件市场** 后也可以一键安装 |
+| `https://github.com/xypang33-sketch/dsh-save-chat` | 仓库地址，用 git 克隆 |
+| `https://github.com/xypang33-sketch/dsh-save-chat/releases/latest/download/dsh-save-chat.tgz` | 预构建包，不克隆仓库、不构建 |
+| 本地目录的绝对路径 | 开发调试用 |
+
+**用 DSH 命令行装**：`dsh plugin` 会把参数直接交给 pnpm，所以能填的形式和上表一致；`--profile` 指定装到哪个 profile，**在哪个目录执行都可以**：
+
 ```sh
 dsh plugin --profile desktop add dsh-save-chat
-# 或者直连仓库安装，不经过 npm
+# 同样的形式，例如直连仓库：
 dsh plugin --profile desktop add https://github.com/xypang33-sketch/dsh-save-chat
+# `desktop` 换成你自己的 profile 名（例如 `web`）
 ```
 
-或在应用内的 **设置 → 插件市场** 里一键安装。**设置 → 插件 → 添加插件** 这几种形式都接受：包名、仓库地址、`.tgz` 地址、本地路径。
+这个 CLI 桌面 App 自带（在 App 包内）；想直接在终端用 `dsh`，可以 `npm install -g @deepseek-ai/dsh`。
 
 重启 `dsh`，然后刷新页面。注意 DSH 目前不支持插件自动更新——升级需要先卸载再安装新版本。
 

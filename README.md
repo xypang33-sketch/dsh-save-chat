@@ -22,13 +22,25 @@
 
 ## Install
 
+**In the app — no CLI needed.** Open **Settings → Plugins → Add plugin** and paste one of these; it accepts all four spec forms:
+
+| Paste | Comes from |
+|---|---|
+| `dsh-save-chat` | npm (mirror-friendly) — also the one-click path once the plugin is in **Settings → Plugin Market** |
+| `https://github.com/xypang33-sketch/dsh-save-chat` | the repository, cloned by git |
+| `https://github.com/xypang33-sketch/dsh-save-chat/releases/latest/download/dsh-save-chat.tgz` | the prebuilt release tarball — no git clone, no build |
+| an absolute path to a local checkout | development |
+
+**With the DSH CLI.** `dsh plugin` forwards its arguments to pnpm, so the spec forms are the same. The `--profile` flag picks which profile to install into; the command does not care which directory you run it from:
+
 ```sh
 dsh plugin --profile desktop add dsh-save-chat
-# or straight from the repository, with no registry in between
+# same spec forms as above, e.g. straight from the repository:
 dsh plugin --profile desktop add https://github.com/xypang33-sketch/dsh-save-chat
+# replace `desktop` with your profile name (for example `web`)
 ```
 
-Or from the in-app **Settings → Plugin Market**. **Settings → Plugins → Add plugin** takes any of those forms — a package name, a repository URL, a `.tgz` URL, or a local path.
+The CLI ships inside the desktop app's bundle; install it globally with `npm install -g @deepseek-ai/dsh` if you prefer it on `PATH`.
 
 Restart `dsh`, then reload the page. Note that DSH does not auto-update plugins yet — to upgrade, uninstall and install the new version.
 

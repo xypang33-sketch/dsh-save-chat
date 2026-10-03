@@ -1,6 +1,6 @@
 {
   "name": "dsh-save-chat",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Save DSH conversation turns into Markdown: a heart in the assistant action row, per-session collections in the sidebar, and a personal knowledge base the model can search on demand.",
   "type": "module",
   "main": "src/index.js",
