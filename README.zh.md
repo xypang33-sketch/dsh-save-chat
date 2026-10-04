@@ -4,6 +4,12 @@
 [![npm](https://img.shields.io/npm/v/dsh-save-chat)](https://www.npmjs.com/package/dsh-save-chat)
 [![license](https://img.shields.io/npm/l/dsh-save-chat)](https://github.com/xypang33-sketch/dsh-save-chat/blob/main/LICENSE)
 
+
+**我发现自己经常在跟 AI 重复问一样的问题, 不知道你们有没有这样的问题?**
+一个报错明明之前解决过，过几天又碰到，却找不到当时的回答。一个方案之前聊了半天，换个会话，又得再问一遍,等AI再答一遍. 
+来来回回，造了不少重复的轮子。
+所以做了个插件 dsh-save-chat，**把聊过的、有用的东西存下来，以后接着用**。
+
 **把好的回答留下来。** 点一下心形，就把**整轮对话**（你的问题 + 完整回答）存成项目里的真实 Markdown 文件；之后面板可以浏览它们，模型也能**按需检索**它们。
 
 [English](https://github.com/xypang33-sketch/dsh-save-chat/blob/main/README.md) · [完整参考](https://github.com/xypang33-sketch/dsh-save-chat/blob/main/docs/reference.zh.md)
