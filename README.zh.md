@@ -107,7 +107,7 @@ DSH 目前不支持插件自动更新——升级需要先卸载再安装新版�
 
 **文件在哪？** `<会话工作目录>/.dsh-favorites/<会话标题>.md`；知识库在 `~/.dsh/knowledge/<年-月>.md`（可配置）。都是普通 Markdown，用任何编辑器都能打开。
 
-**会把数据发到别处吗？** 不会。全部在本机，它提供的接口只监听回环地址。
+**会把数据发到别处吗？** 插件自己不发送——没有遥测，也没有我们的服务器；收藏与知识库都是本机文件，接口只监听回环地址。唯一离开本机的是 DSH 本来就在为你做的模型调用：收藏时给这一轮起标题、提升图片时写一句摘要，走你自己配置的服务商。
 
 **花钱吗？** 收藏时一次小模型调用给这一轮起名（几百 token，面板里可见）；提升图片时一次小视觉调用写摘要；检索是本地免费的。
 
@@ -119,15 +119,9 @@ DSH 目前不支持插件自动更新——升级需要先卸载再安装新版�
 
 ## 反馈
 
-三条通道，按"最省事"排序：
+**GitHub Issues** —— [新建 issue](https://github.com/xypang33-sketch/dsh-save-chat/issues/new/choose)：有 bug 与功能建议两个模板。bug 模板里已经列好该附哪些信息；功能建议模板只要说清你想做什么。
 
-1. **插件页的评论区（推荐）** —— [awesome-dsh-plugin.com/p/xypang33-sketch/dsh-save-chat/](https://awesome-dsh-plugin.com/p/xypang33-sketch/dsh-save-chat/)。目录站、dshmarket.com 与 dsh-market 内置的评论抽屉**共用同一条讨论线程**，所以在这里提问，别的用户也看得到、也能回答。
-2. **GitHub Issues** —— [新建 issue](https://github.com/xypang33-sketch/dsh-save-chat/issues/new/choose)，有 bug 与功能建议两个模板；模板里已经列好该附哪些诊断信息。
-3. **安全或隐私问题** —— 请不要开公开 issue，改用仓库 **Security → Report a vulnerability** 的私密报告。
-
-懒得填模板也行，告诉我三件事我就能开始查：**插件版本**（`npm view dsh-save-chat version`）、**你用的是 `dsh web` 还是桌面 App**、**面板里的报错，或 `<会话工作目录>/.dsh-favorites/` 的文件名列表**。
-
-插件本身**不向任何地方发送数据**（只有回环地址上的本地接口），所以这些信息只能由你手动提供——这也是这里只列了人工通道的原因。
+懒得填模板也行，告诉我三件事就能开始：**插件版本**（`npm view dsh-save-chat version`）、**你用的是 `dsh web` 还是桌面 App**、**你遇到的问题，或者你希望它改进什么**（有报错就贴报错）。
 
 ## 开发
 

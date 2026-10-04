@@ -106,7 +106,7 @@ By default the model searches **only the personal knowledge base** — promoting
 
 **Where are the files?** `<session workspace>/.dsh-favorites/<session title>.md`; the knowledge base is `~/.dsh/knowledge/<YYYY-MM>.md` (configurable). Both are ordinary Markdown — open them in any editor.
 
-**Does it send anything anywhere?** No. Everything stays on your machine, and the routes it serves are loopback-only.
+**Does it send anything anywhere?** Not on its own: there is no telemetry and no server of ours, and both the collections and the knowledge base are local files served over loopback-only routes. The only content that leaves your machine is what DSH already sends for you — naming a saved turn, and summarising an image when you promote it — through the provider you configured.
 
 **What does it cost?** Favoriting makes one small model call to name the turn (a few hundred tokens, shown in the panel). Promoting an image makes one small vision call for its summary. Searching is local and free.
 
@@ -118,15 +118,9 @@ By default the model searches **only the personal knowledge base** — promoting
 
 ## Feedback
 
-Three channels, easiest first:
+**GitHub Issues** — [open an issue](https://github.com/xypang33-sketch/dsh-save-chat/issues/new/choose): there are bug-report and feature-request templates. The bug template lists the diagnostics worth attaching; the feature template only needs to know what you are trying to do.
 
-1. **The comment thread on the plugin's page (recommended)** — [catalog page](https://awesome-dsh-plugin.com/p/xypang33-sketch/dsh-save-chat/). The catalog site, dshmarket.com and the comment drawer inside dsh-market all mount **one shared discussion thread**, so a question asked there is visible to other users too — and they can answer it.
-2. **GitHub Issues** — [open an issue](https://github.com/xypang33-sketch/dsh-save-chat/issues/new/choose); there are bug-report and feature-request templates, and the bug template lists the diagnostics worth attaching.
-3. **Security or privacy** — please do not open a public issue; use **Security → Report a vulnerability** on the repository instead.
-
-If you would rather not fill in a template, three facts are enough for me to start: the **plugin version** (`npm view dsh-save-chat version`), **whether you run `dsh web` or the desktop app**, and **the error you saw or the file names in `<session workspace>/.dsh-favorites/`**.
-
-The plugin **sends nothing anywhere** (only local routes on the loopback address), which is also why every channel above is manual: there is no telemetry to fall back on.
+If you would rather not fill in a template, three facts are enough for me to start: the **plugin version** (`npm view dsh-save-chat version`), **whether you run `dsh web` or the desktop app**, and **what went wrong or what you would like improved** (paste the error if there is one).
 
 ## Development
 
