@@ -117,6 +117,18 @@ DSH 目前不支持插件自动更新——升级需要先卸载再安装新版�
 
 **模型能看到我全部收藏吗？** 只有它用 `scope: "all"` 搜索时（你问过去的事就会）。否则它只看到你提升过的。
 
+## 反馈
+
+三条通道，按"最省事"排序：
+
+1. **插件页的评论区（推荐）** —— [awesome-dsh-plugin.com/p/xypang33-sketch/dsh-save-chat/](https://awesome-dsh-plugin.com/p/xypang33-sketch/dsh-save-chat/)。目录站、dshmarket.com 与 dsh-market 内置的评论抽屉**共用同一条讨论线程**，所以在这里提问，别的用户也看得到、也能回答。
+2. **GitHub Issues** —— [新建 issue](https://github.com/xypang33-sketch/dsh-save-chat/issues/new/choose)，有 bug 与功能建议两个模板；模板里已经列好该附哪些诊断信息。
+3. **安全或隐私问题** —— 请不要开公开 issue，改用仓库 **Security → Report a vulnerability** 的私密报告。
+
+懒得填模板也行，告诉我三件事我就能开始查：**插件版本**（`npm view dsh-save-chat version`）、**你用的是 `dsh web` 还是桌面 App**、**面板里的报错，或 `<会话工作目录>/.dsh-favorites/` 的文件名列表**。
+
+插件本身**不向任何地方发送数据**（只有回环地址上的本地接口），所以这些信息只能由你手动提供——这也是这里只列了人工通道的原因。
+
 ## 开发
 
 ```sh

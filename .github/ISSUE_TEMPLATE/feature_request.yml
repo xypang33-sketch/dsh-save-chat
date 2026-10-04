@@ -1,0 +1,30 @@
+name: Feature request / 功能建议
+description: Suggest a change or an addition. / 建议一个改动或新增功能。
+title: '[feature] '
+labels: ['enhancement']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The plugin deliberately stays small: plain Markdown files, no database, no runtime dependencies, and nothing injected into a conversation unless the model asks. Suggestions that keep those properties are the easiest to accept — but say what you actually need, not what fits the constraints.
+
+        插件刻意保持小而简单：纯 Markdown 文件、无数据库、零运行时依赖、不主动注入上下文。符合这些性质的建议最容易接受——但你尽管写真实需求。
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem / 你遇到的问题
+      description: What are you trying to do that the plugin makes hard today? / 你想做什么，而现在很难做？
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What you would like / 你希望的形态
+    validations:
+      required: false
+  - type: textarea
+    id: workaround
+    attributes:
+      label: Current workaround, if any / 目前的替代做法
+    validations:
+      required: false

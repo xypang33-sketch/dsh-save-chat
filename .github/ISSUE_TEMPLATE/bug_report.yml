@@ -1,0 +1,57 @@
+name: Bug report / 问题报告
+description: Something in dsh-save-chat does not work as described. / 插件的行为与描述不符。
+title: '[bug] '
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. Two things make a fix much faster: **which flavour of DSH you run** and **what the files on disk look like**. Everything below stays on your machine — the plugin sends nothing anywhere, and neither should your report (redact paths if you like).
+
+        中文也可以，直接写就行。
+  - type: input
+    id: plugin-version
+    attributes:
+      label: Plugin version / 插件版本
+      description: "`npm view dsh-save-chat version`, or the version in the plugin's own package.json."
+    validations:
+      required: true
+  - type: dropdown
+    id: flavour
+    attributes:
+      label: Which DSH? / 哪种 DSH
+      options:
+        - dsh web (terminal)
+        - desktop app
+        - not sure / 不确定
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: What you did / 复现步骤
+      placeholder: |
+        1. open a session in workspace …
+        2. click the heart under a reply
+        3. …
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected, what happened / 期望与实际
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics / 诊断信息
+      description: Paste what you can — no secrets, no API keys.
+      value: |
+        - collection files: `ls "<session workspace>/.dsh-favorites/"`
+        - knowledge base: `ls ~/.dsh/knowledge/`
+        - install line: the `dsh-save-chat` entry in `~/.dsh/profiles/<profile>/package.json`
+        - panel header token figure (if the complaint is about cost)
+        - any error text from the browser console or the `dsh` terminal
+    validations:
+      required: false

@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Questions and general feedback / 使用问题与一般反馈
+    url: https://awesome-dsh-plugin.com/p/xypang33-sketch/dsh-save-chat/
+    about: The comment thread on the plugin's catalog page — the fastest place to ask, and the one other users read.
+  - name: How it works, and its limits / 原理与边界
+    url: https://github.com/xypang33-sketch/dsh-save-chat/blob/main/docs/reference.md
+    about: File format, every HTTP route, design notes, limitations.

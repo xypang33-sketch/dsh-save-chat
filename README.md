@@ -116,6 +116,18 @@ By default the model searches **only the personal knowledge base** — promoting
 
 **Can the model see my whole collection?** Only if it searches with `scope: "all"`, which it does when you ask about past work. Otherwise it sees what you promoted.
 
+## Feedback
+
+Three channels, easiest first:
+
+1. **The comment thread on the plugin's page (recommended)** — [catalog page](https://awesome-dsh-plugin.com/p/xypang33-sketch/dsh-save-chat/). The catalog site, dshmarket.com and the comment drawer inside dsh-market all mount **one shared discussion thread**, so a question asked there is visible to other users too — and they can answer it.
+2. **GitHub Issues** — [open an issue](https://github.com/xypang33-sketch/dsh-save-chat/issues/new/choose); there are bug-report and feature-request templates, and the bug template lists the diagnostics worth attaching.
+3. **Security or privacy** — please do not open a public issue; use **Security → Report a vulnerability** on the repository instead.
+
+If you would rather not fill in a template, three facts are enough for me to start: the **plugin version** (`npm view dsh-save-chat version`), **whether you run `dsh web` or the desktop app**, and **the error you saw or the file names in `<session workspace>/.dsh-favorites/`**.
+
+The plugin **sends nothing anywhere** (only local routes on the loopback address), which is also why every channel above is manual: there is no telemetry to fall back on.
+
 ## Development
 
 ```sh
